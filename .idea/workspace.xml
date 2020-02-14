@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b066017-ef7f-48ad-88b9-cb77c046169e" name="Default Changelist" comment="" />
+    <list default="true" id="3b066017-ef7f-48ad-88b9-cb77c046169e" name="Default Changelist" comment="Add Db manager + Migration + Db creation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConnectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConnectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DbManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -127,18 +137,33 @@
       <updated>1580398110938</updated>
       <workItem from="1580398115308" duration="5607000" />
       <workItem from="1580917370606" duration="69000" />
-      <workItem from="1580995291477" duration="5326000" />
+      <workItem from="1580995291477" duration="5958000" />
+      <workItem from="1581451283810" duration="1853000" />
+      <workItem from="1581590944128" duration="2026000" />
+      <workItem from="1581670008806" duration="8025000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Db manager + Migration + Db creation">
+      <created>1581000741834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581000741834</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Db manager + Migration + Db creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Db manager + Migration + Db creation" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="#Project_Structure" timestamp="1580398379930">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1581671004449">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1580398379930" />
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1581671004449" />
     <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580403228381">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -155,37 +180,45 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1581000640268" />
-    <state width="1237" height="147" key="GridCell.Tab.0.bottom" timestamp="1581000661167">
+    <state width="1237" height="147" key="GridCell.Tab.0.bottom" timestamp="1581676270044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581000661167" />
-    <state width="1237" height="147" key="GridCell.Tab.0.center" timestamp="1581000661166">
+    <state width="1237" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581676270044" />
+    <state width="1237" height="147" key="GridCell.Tab.0.center" timestamp="1581676270044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581000661166" />
-    <state width="1237" height="147" key="GridCell.Tab.0.left" timestamp="1581000661166">
+    <state width="1237" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581676270044" />
+    <state width="1237" height="147" key="GridCell.Tab.0.left" timestamp="1581676270044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581000661166" />
-    <state width="1237" height="147" key="GridCell.Tab.0.right" timestamp="1581000661167">
+    <state width="1237" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581676270044" />
+    <state width="1237" height="147" key="GridCell.Tab.0.right" timestamp="1581676270044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581000661167" />
+    <state width="1237" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581676270044" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1581000645351">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581000645351" />
-    <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1580995315489">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1581675066493">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="341" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1580995315489" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1581675066493" />
+    <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1581670263634">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="341" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1581670263634" />
     <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1580999883147">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1580999883147" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1581000382329">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1581677200077">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1581000382329" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1581677200077" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1581675845046">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1581675845046" />
   </component>
 </project>

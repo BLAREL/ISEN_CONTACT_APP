@@ -1,5 +1,6 @@
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
@@ -12,6 +13,7 @@ import java.sql.*;
 
 public class HelloFX extends Application {
 
+    Stage primaryStage;
     @Override
     public void start(final Stage primaryStage) {
         try {
@@ -22,7 +24,11 @@ public class HelloFX extends Application {
             // Chargement du FXML.
             final AnchorPane root = (AnchorPane) fxmlLoader.load();
             // Création de la scène.
-            final Scene scene = new Scene(root, 1920, 1080);
+            final Scene scene = new Scene(root, 800, 600);
+
+
+            ConnectController connectController = (ConnectController) fxmlLoader.getController();
+            connectController.setSecondScene("home.fxml");
             primaryStage.setScene(scene);
         } catch (IOException ex) {
             System.err.println("Erreur au chargement: " + ex);
@@ -30,7 +36,6 @@ public class HelloFX extends Application {
         primaryStage.setTitle("Test FXML");
         primaryStage.show();
     }
-
     @Override
     public void init() {
     }

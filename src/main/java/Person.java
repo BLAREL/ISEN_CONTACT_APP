@@ -4,7 +4,7 @@ public class Person {
     private int idperson;
     private String lastname;
     private String firstname;
-    private int phone_number;
+    private String phone_number;
     private String address;
     private String email_address;
     private Date birth_date;
@@ -33,7 +33,7 @@ public class Person {
         this.lastname = lastname;
     }
 
-    public void setPhone_number(int phone_number) {
+    public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
     }
 
@@ -45,7 +45,7 @@ public class Person {
         return idperson;
     }
 
-    public int getPhone_number() {
+    public String getPhone_number() {
         return phone_number;
     }
 

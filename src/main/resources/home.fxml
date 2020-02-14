@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="HomeController">
+    <children>
+        <GridPane alignment="center" hgap="100.0" vgap="100.0"
+                  xmlns:fx="http://javafx.com/fxml">
+        <TableView fx:id="listPerson"  AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="21.0">
+            <columns>
+                <TableColumn prefWidth="135.0" text="Nom">
+                    <cellValueFactory><PropertyValueFactory property="lastname"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="0.0" prefWidth="142.0" text="Prenom">
+                    <cellValueFactory><PropertyValueFactory property="firstname"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="0.0" prefWidth="142.0" text="Phone">
+                    <cellValueFactory><PropertyValueFactory property="phone_number"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="0.0" prefWidth="142.0" text="Address">
+                    <cellValueFactory><PropertyValueFactory property="address"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="0.0" prefWidth="142.0" text="Mail">
+                    <cellValueFactory><PropertyValueFactory property="email_address"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="0.0" prefWidth="142.0" text="BirthDate">
+                    <cellValueFactory><PropertyValueFactory property="birth_date"/></cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        </GridPane>
+    </children>
+</AnchorPane>
