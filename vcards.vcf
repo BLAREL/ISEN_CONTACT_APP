@@ -1,0 +1,36 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:ez-vcard 0.10.5
+N:test;test;;test
+ADR:;;;;;;test
+EMAIL:toto
+TEL:test
+BDAY:2020-01-26
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+PRODID:ez-vcard 0.10.5
+N:test;test;;test
+ADR:;;;;;;test
+EMAIL:test
+TEL:test
+BDAY:2020-01-26
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+PRODID:ez-vcard 0.10.5
+N:test;test;;test
+ADR:;;;;;;test
+EMAIL:test
+TEL:test
+BDAY:2020-01-26
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+PRODID:ez-vcard 0.10.5
+N:test;test;;test
+ADR:;;;;;;test
+EMAIL:test
+TEL:test
+BDAY:2020-01-25
+END:VCARD

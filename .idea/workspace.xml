@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b066017-ef7f-48ad-88b9-cb77c046169e" name="Default Changelist" comment="Add Db manager + Migration + Db creation">
+    <list default="true" id="3b066017-ef7f-48ad-88b9-cb77c046169e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConnectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConnectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DbManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +145,7 @@
       <workItem from="1582296983749" duration="177000" />
       <workItem from="1582364602016" duration="1778000" />
       <workItem from="1582373030324" duration="7652000" />
-      <workItem from="1582385352041" duration="228000" />
+      <workItem from="1582385352041" duration="485000" />
     </task>
     <task id="LOCAL-00001" summary="Add Db manager + Migration + Db creation">
       <created>1581000741834</created>
@@ -160,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581000741834</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Db manager + Migration + Db creation">
+      <created>1582385612472</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582385612472</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,10 +184,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="58" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1580999873613" />
-    <state x="208" y="0" key="CommitChangelistDialog2" timestamp="1582385556684">
+    <state x="208" y="0" key="CommitChangelistDialog2" timestamp="1582385610929">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="208" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582385556684" />
+    <state x="208" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582385610929" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1582049167376">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -219,10 +220,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1582385352842" />
-    <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582385582020">
+    <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582386043090">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1582385582020" />
+    <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1582386043090" />
     <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1580999883147">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
