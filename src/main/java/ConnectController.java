@@ -42,10 +42,11 @@ public class ConnectController {
 
     @FXML
     private void goToConnect(ActionEvent event) {
-        System.out.println(DbManager.getInstance().setCredentials( userField.getText(), passwordField.getText()));
-        Stage primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        this.loadScene();
-        primaryStage.setScene(this.scene);
+        if (DbManager.getInstance().setCredentials( userField.getText(), passwordField.getText())) {
+            Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            this.loadScene();
+            primaryStage.setScene(this.scene);
+        }
     }
 }
 

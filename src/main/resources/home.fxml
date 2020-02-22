@@ -1,38 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.cell.PropertyValueFactory?>
-<AnchorPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="HomeController">
+<AnchorPane fx:id="ap" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
     <children>
-        <GridPane alignment="center" hgap="100.0" vgap="100.0"
-                  xmlns:fx="http://javafx.com/fxml">
-        <TableView fx:id="listPerson"  AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="21.0">
+        <VBox prefHeight="300.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0">
+            <GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml">
+                <padding><Insets bottom="40" left="40" right="40" top="40" /></padding>
+                <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="118.00001525878906">
+                    </ColumnConstraints>
+                    <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="80.99998474121094" prefWidth="109.99998474121094">
+                    </ColumnConstraints>
+               <ColumnConstraints maxWidth="174.0" minWidth="14.0" prefWidth="73.00003051757812" />
+               <ColumnConstraints maxWidth="168.99996948242188" minWidth="67.66666666666663" prefWidth="168.99996948242188" />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+                </columnConstraints>
+                <!-- Add Name Label -->
+                <Label text="Nom : " GridPane.columnIndex="0" GridPane.rowIndex="1">
+                </Label>
+                <!-- Add Name Text Field -->
+                <TextField fx:id="name" prefHeight="30" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <!-- Add Password Label -->
+
+                <Label text="Prenom : " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <TextField fx:id="lastname" prefHeight="30" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Label text="Pseudo : " GridPane.columnIndex="0" GridPane.rowIndex="2">
+                </Label>
+                <TextField fx:id="nickname" prefHeight="30" prefWidth="367.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Tel : " GridPane.rowIndex="4" />
+                <TextField fx:id="phone" prefHeight="30" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Mail : " GridPane.columnIndex="2" GridPane.rowIndex="4">
+                </Label>
+                <TextField fx:id="mail" prefHeight="30" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+
+                <Label text="Date de naissance : " GridPane.rowIndex="5" />
+                <DatePicker fx:id="birthday" prefHeight="30" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label text="Addresse : " GridPane.columnIndex="2" GridPane.rowIndex="5">
+                </Label>
+                <TextField fx:id="adress" prefHeight="30" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <!-- Add Submit Button -->
+                <Button fx:id="submitButton" defaultButton="true" onAction="#onAdd" prefHeight="30" prefWidth="100" text="Submit" visible="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="1">
+                    <GridPane.margin>
+                        <Insets bottom="20" left="0" right="0" top="20" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="editButton" defaultButton="true" onAction="#onEdit" prefHeight="30" prefWidth="100" text="Edit" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="1">
+                    <GridPane.margin>
+                        <Insets bottom="20" left="0" right="0" top="20" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="deleteButton" defaultButton="true" onAction="#onDelete" prefHeight="30" prefWidth="180" text="Delete" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="1">
+                    <GridPane.margin>
+                        <Insets bottom="20" left="0" right="0" top="20" />
+                    </GridPane.margin>
+                </Button>
+            <Button fx:id="exportButton" mnemonicParsing="false" onAction="#onExport" prefHeight="30.0" prefWidth="85.0" text="Export" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onImport" prefHeight="30.0" prefWidth="85.0" text="Import" GridPane.columnIndex="7" />
+            <CheckBox mnemonicParsing="false" onAction="#changeState" text="Edit ?" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            </GridPane>
+        </VBox>
+        <VBox minHeight="400.0" minWidth="400.0" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="400.0">
+
+        <TableView fx:id="listPerson" editable="true" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="21.0" VBox.vgrow="ALWAYS">
             <columns>
-                <TableColumn prefWidth="135.0" text="Nom">
-                    <cellValueFactory><PropertyValueFactory property="lastname"/></cellValueFactory>
+                <TableColumn prefWidth="80.3333511352539" text="Nom">
+                    <cellValueFactory><PropertyValueFactory property="lastname" /></cellValueFactory>
                 </TableColumn>
-                <TableColumn minWidth="0.0" prefWidth="142.0" text="Prenom">
-                    <cellValueFactory><PropertyValueFactory property="firstname"/></cellValueFactory>
+                <TableColumn minWidth="0.0" prefWidth="81.33332824707031" text="Prenom">
+                    <cellValueFactory><PropertyValueFactory property="firstname" /></cellValueFactory>
                 </TableColumn>
-                <TableColumn minWidth="0.0" prefWidth="142.0" text="Phone">
-                    <cellValueFactory><PropertyValueFactory property="phone_number"/></cellValueFactory>
+                <TableColumn minWidth="0.0" prefWidth="68.66665649414062" text="Surnom">
+                    <cellValueFactory><PropertyValueFactory property="nickname" /></cellValueFactory>
                 </TableColumn>
-                <TableColumn minWidth="0.0" prefWidth="142.0" text="Address">
-                    <cellValueFactory><PropertyValueFactory property="address"/></cellValueFactory>
+                <TableColumn minWidth="0.0" prefWidth="88.66665649414062" text="Phone">
+                    <cellValueFactory><PropertyValueFactory property="phone_number" /></cellValueFactory>
                 </TableColumn>
-                <TableColumn minWidth="0.0" prefWidth="142.0" text="Mail">
-                    <cellValueFactory><PropertyValueFactory property="email_address"/></cellValueFactory>
+                <TableColumn minWidth="0.0" prefWidth="86.66668701171875" text="Address">
+                    <cellValueFactory><PropertyValueFactory property="address" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="0.0" prefWidth="100.0" text="Mail">
+                    <cellValueFactory><PropertyValueFactory property="email_address" /></cellValueFactory>
                 </TableColumn>
                 <TableColumn minWidth="0.0" prefWidth="142.0" text="BirthDate">
-                    <cellValueFactory><PropertyValueFactory property="birth_date"/></cellValueFactory>
+                    <cellValueFactory><PropertyValueFactory property="birth_date" /></cellValueFactory>
                 </TableColumn>
             </columns>
         </TableView>
-        </GridPane>
+        </VBox>
+      <ProgressBar fx:id="bar" layoutX="91.0" layoutY="31.0" prefHeight="18.0" prefWidth="17.0" progress="0.0" />
+      <TextField editable="false" layoutX="23.0" layoutY="27.0" prefHeight="25.0" prefWidth="58.0" text="Status :" />
     </children>
 </AnchorPane>

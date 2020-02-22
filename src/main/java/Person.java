@@ -8,6 +8,9 @@ public class Person {
     private String address;
     private String email_address;
     private Date birth_date;
+    private String nickname;
+
+    public void setNickname(String nickname) { this.nickname = nickname ; }
 
     public void setFirstname(String firstname) {
         this.firstname = firstname;
@@ -36,6 +39,8 @@ public class Person {
     public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
     }
+
+    public String getNickname() { return nickname; }
 
     public Date getBirth_date() {
         return birth_date;
